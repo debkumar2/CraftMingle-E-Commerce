@@ -1,0 +1,1430 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 10px;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Jost", sans-serif;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --main-color: #cf0018;
+    --second-color: #6666;
+    --other-color: #f4ddd6;
+    --second-bg-color: #f5f5f5;
+
+    --h1-font: 6rem;
+    --h2-font: 4rem;
+    --p-font: 1.1rem;
+}
+
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Section Start */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* background-color: #f5f5f5; */
+    transition: all 0.5s ease-in-out;
+}
+
+.sticky {
+    background: var(--bg-color);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.nav-logo .logo {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.navbar-items {
+    display: flex;
+}
+
+.navbar-items li a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 25px;
+    color: var(--text-color);
+    /* transition: all 4s ease; */
+}
+
+.navbar-items li a:hover {
+    color: var(--main-color);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right i {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 0 10px;
+    transition: all 0.4s ease;
+}
+
+.navbar-right i:hover {
+    color: var(--main-color);
+}
+
+#menu-icons {
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 10001;
+    margin-left: 15px;
+    display: none;
+}
+
+/* Header Section End */
+/* Home Section Start */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 120px 0;
+    background-color: var(--other-color);
+}
+
+.home-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-left-text {
+    width: 50%;
+}
+
+.home-right-image {
+    width: 50%;
+}
+
+.home-right-image img {
+    width: 100%;
+}
+
+.home-left-text h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.home-left-text h1 {
+    font-size: var(--h1-font);
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 6.5rem;
+    margin-bottom: 20px;
+}
+
+.home-left-text p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+}
+
+.btn i {
+    margin-right: 4px;
+    font-size: 1.4rem;
+}
+
+/* Home Section End */
+
+/* Craft section Start */
+.main-craft {
+    padding: 50px 0;
+}
+
+.craft {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    gap: 20px;
+}
+
+.craft-card img {
+    width: 100%;
+}
+
+.craft-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.craft-card:hover {
+    transform: translateY(-10px);
+}
+
+.craft-title {
+    text-align: center;
+}
+
+.craft-title h4 {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    margin: 10px 0;
+}
+
+.craft-title h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.shop-card-btn {
+    font-size: 1.4rem;
+}
+
+/* Craft Section End */
+
+/* Arrival Section Start */
+.arrival {
+    padding: 50px 0;
+}
+
+.arrival-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.arrival-heading h2 {
+    font-size: var(--h2-font);
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.arrival-heading p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--main-color);
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.main-arrival-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.arrival-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.arrival-img .hidden-btn a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    color: var(--bg-color);
+    transition: opacity 0.4s;
+    opacity: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrival-img:hover .hidden-btn a {
+    opacity: 1;
+}
+
+.arrival-img .hidden-btn a i {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.arrival-img img {
+    display: block;
+    width: 100%;
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+
+.arrival-img img:hover {
+    transform: scale(1.1);
+}
+
+.arrival-title {
+    text-align: center;
+}
+
+.arrival-title h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.arrival-title p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Arrival Section End */
+
+/* CTA Section Start */
+.cta {
+    padding: 50px 0;
+}
+
+.main-cta {
+    background-image: url(./img/cta.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 400px;
+    position: relative;
+}
+
+.inside-main {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+}
+
+.inside-main h2 {
+    font-size: var(--h2-font);
+    font-weight: 700;
+    margin-bottom: 15px;
+    /* letter-spacing: 1px; */
+}
+
+.inside-main p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 60%;
+    margin-bottom: 15px;
+
+}
+
+.cta-text-field {
+    width: 60%;
+    height: 40px;
+    padding: 5px 8px;
+    margin-right: 5px;
+}
+
+.cta-btn {
+    padding: 12px 40px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    text-transform: uppercase;
+}
+
+/* CTA Section End */
+
+/* Trending Section Start */
+.trending {
+    padding: 50px 0;
+}
+
+.trending-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.trending-heading h2 {
+    font-size: var(--h2-font);
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.trending-heading p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--main-color);
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.main-trending-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+
+.trending-img img {
+    display: block;
+    width: 100%;
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+
+.trending-img img:hover {
+    transform: translateY(-10px);
+
+}
+
+.trending-title {
+    text-align: center;
+}
+
+.trending-title h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.trending-title p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+
+/* Trending Section End */
+
+
+/* Latest News Start */
+
+.latest {
+    padding: 50px 0;
+}
+
+.latest-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.latest-heading h2 {
+    font-size: var(--h2-font);
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.latest-heading p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--main-color);
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.main-latest-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.latest-img {
+    overflow: hidden;
+}
+
+.latest-img img {
+    display: block;
+    width: 100%;
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+
+.latest-img img:hover {
+    transform: scale(1.1);
+
+}
+
+.latest-title {
+    margin: 15px 0;
+}
+
+.latest-title h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.latest-title h5 {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Latest News End */
+
+/* Footer Section Start */
+footer {
+    padding: 50px 0;
+}
+
+.main-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.footer-logo {
+    max-width: 400px;
+}
+
+.footer-logo p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.footer-logo a {
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.footer-logo a,
+.main-footer h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-links i {
+    font-size: 2rem;
+    margin-right: 5px;
+    color: #000000a9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-links i:hover {
+    color: var(--main-color);
+}
+
+.quicks-links li a {
+    font-size: 1.6rem;
+    color: #000000a9;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* Footer Section End */
+
+/* Subfooter Section Start */
+.sub-footer {
+    background-color: var(--second-bg-color);
+}
+
+.main-subfooter {
+    width: 100%;
+    padding: 25px 0;
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+}
+
+.copyright p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.copyright p span {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.top {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.top i {
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    padding: 12px;
+    border-radius: 2rem;
+
+}
+
+/* Subfooter Section End */
+
+
+
+/* Responsive Design Start */
+
+@media only screen and (min-width :1200px) and (max-width: 1279px) {
+    .container {
+        max-width: 1170px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width :992px) and (max-width: 1199px) {
+    .container {
+        max-width: 970px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .nav-logo .logo {
+        font-size: 3rem;
+    }
+
+    .navbar-items li a {
+        font-size: 1.5rem;
+        margin: 0 20px;
+    }
+
+    .home-left-text h1 {
+        font-size: 5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 5.5rem;
+        margin-bottom: 16px;
+    }
+
+    .arrival-heading h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .inside-main h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .trending-heading h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .latest-title h3 {
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (min-width :768px) and (max-width: 991px) {
+    .nav-logo .logo {
+        font-size: 2.5rem;
+    }
+
+    .navbar-items li a {
+        font-size: 1.4rem;
+        margin: 0px 10px;
+    }
+
+    .home {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .home-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-left-text {
+        padding: 40px 0;
+    }
+
+    .home-left-text,
+    .home-right-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-right-image img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .home-left-text h1 {
+        font-size: 4.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .home-left-text h4 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--main-color);
+        margin-bottom: 10px;
+    }
+
+    .home-left-text p {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .craft {
+        height: auto;
+    }
+
+    .craft-title h4 {
+        font-size: 1.4rem;
+        color: var(--main-color);
+        margin: 10px 0;
+    }
+
+    .craft-title h3 {
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .arrival-heading h2,
+    .trending-heading h2,
+    .latest-heading h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .arrival-heading p,
+    .trending-heading p,
+    .latest-heading p {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .arrival-title h3,
+    .trending-title h3 {
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin: 10px 0;
+    }
+
+    .arrival-title p,
+    .trending-title p {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .inside-main h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .inside-main p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        width: 60%;
+        margin-bottom: 15px;
+    }
+
+    .latest-title h5 {
+        color: var(--main-color);
+        font-size: 1.2rem;
+    }
+
+    .latest-title h3 {
+        font-size: 1.6rem;
+        font-weight: 800;
+        margin: 10px 0;
+    }
+
+    .footer-logo {
+        max-width: 280px;
+    }
+
+    .footer-logo a,
+    .main-footer h4 {
+        font-size: 1.8rem;
+    }
+
+    .footer-logo p {
+        font-size: 1.4rem;
+    }
+
+    .quicks-links li a {
+        font-size: 1.4rem;
+    }
+
+    .main-craft,
+    .arrival,
+    .cta,
+    .trending,
+    .latest,
+    footer {
+        padding: 30px 0;
+    }
+
+    .copyright p {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width :576px) and (max-width: 767px) {
+    #menu-icons {
+        display: block;
+    }
+
+    .nav-logo .logo {
+        font-size: 2.5rem;
+    }
+
+    .navbar-items {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 60px;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        transition: all 0.4s ease;
+    }
+
+    .navbar-items li a {
+        display: inline-block;
+        color: #979797;
+        padding: 0;
+        margin: 0px 0px 40px 0px;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    .navbar-items.open {
+        left: 0;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .craft {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main-arrival-card {
+        flex-wrap: wrap;
+    }
+
+    .arrival-card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .home {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .home-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-left-text {
+        padding: 40px 0;
+    }
+
+    .home-left-text,
+    .home-right-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-right-image img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .home-left-text h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .home-left-text h4 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--main-color);
+        margin-bottom: 10px;
+    }
+
+    .home-left-text p {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .arrival-heading h2 {
+        font-size: 3.5rem
+    }
+
+    .arrival-heading p {
+        width: 75%;
+    }
+
+    .inside-main h2,
+    .trending-heading h2,
+    .latest-heading h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .inside-main p,
+    .trending-heading p,
+    .latest-heading p {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    .main-cta {
+        background-size: cover;
+        background-position: center;
+        min-height: 175px;
+    }
+
+    .main-trending-card {
+        flex-wrap: wrap;
+    }
+
+    .trending-card {
+        width: calc(50% - 20px);
+    }
+
+    .main-craft,
+    .arrival,
+    .cta,
+    .trending,
+    .latest,
+    footer {
+        padding: 30px 0;
+    }
+
+    .main-latest-card {
+        flex-direction: column;
+    }
+
+    .main-footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .quicks-links {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .copyright p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width :480px) and (max-width: 575px) {
+    #menu-icons {
+        display: block;
+    }
+
+    .nav-logo .logo {
+        font-size: 2rem;
+    }
+
+    .navbar-items {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 60px;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        transition: all 0.4s ease;
+    }
+
+    .navbar-items li a {
+        display: inline-block;
+        color: #979797;
+        padding: 0;
+        margin: 0px 0px 40px 0px;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    .navbar-items.open {
+        left: 0;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .craft {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main-arrival-card {
+        flex-wrap: wrap;
+    }
+
+    .arrival-card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .home {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .home-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-left-text {
+        padding: 40px 0;
+    }
+
+    .home-left-text,
+    .home-right-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-right-image img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .home-left-text h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .home-left-text h4 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--main-color);
+        margin-bottom: 5px;
+    }
+
+    .home-left-text p {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .arrival-heading h2 {
+        font-size: 3.5rem
+    }
+
+    .arrival-heading p {
+        width: 75%;
+    }
+
+    .inside-main h2,
+    .trending-heading h2,
+    .latest-heading h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .inside-main p {
+        display: none;
+    }
+
+    .inside-main p,
+    .trending-heading p,
+    .latest-heading p {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    .cta-btn {
+        padding: 12px 20px;
+    }
+
+    .main-cta {
+        background-size: cover;
+        background-position: center;
+        min-height: 175px;
+    }
+
+    .main-trending-card {
+        flex-wrap: wrap;
+    }
+
+    .trending-card {
+        width: calc(50% - 20px);
+    }
+
+    .main-craft,
+    .arrival,
+    .cta,
+    .trending,
+    .latest,
+    footer {
+        padding: 30px 0;
+    }
+
+    .main-latest-card {
+        flex-direction: column;
+    }
+
+    .main-footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .quicks-links {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .copyright p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width :320px) and (max-width: 479px) {
+    #menu-icons {
+        display: block;
+    }
+
+    .nav-logo .logo {
+        font-size: 2rem;
+    }
+
+    .navbar-items {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 60px;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        transition: all 0.4s ease;
+    }
+
+    .navbar-items li a {
+        display: inline-block;
+        color: #979797;
+        padding: 0;
+        margin: 0px 0px 40px 0px;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    .navbar-items.open {
+        left: 0;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .craft {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main-arrival-card {
+        flex-wrap: wrap;
+    }
+
+    .arrival-card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .home {
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .home-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-left-text {
+        padding: 40px 0;
+    }
+
+    .home-left-text,
+    .home-right-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-right-image img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .home-left-text h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .home-left-text h4 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--main-color);
+        margin-bottom: 5px;
+    }
+
+    .home-left-text p {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .arrival-heading h2 {
+        font-size: 3.5rem
+    }
+
+    .arrival-heading p {
+        width: 75%;
+    }
+
+    .inside-main h2,
+    .trending-heading h2,
+    .latest-heading h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .inside-main p {
+        display: none;
+    }
+
+    .inside-main p,
+    .trending-heading p,
+    .latest-heading p {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    .cta-btn {
+        padding: 12px 20px;
+    }
+
+    .main-cta {
+        background-size: cover;
+        background-position: center;
+        min-height: 175px;
+    }
+
+    .main-trending-card {
+        flex-wrap: wrap;
+    }
+
+    .trending-card {
+        width: calc(50% - 20px);
+    }
+
+    .main-craft,
+    .arrival,
+    .cta,
+    .trending,
+    .latest,
+    footer {
+        padding: 30px 0;
+    }
+
+    .main-latest-card {
+        flex-direction: column;
+    }
+
+    .main-footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .quicks-links {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .copyright p {
+        font-size: 1rem;
+    }
+
+    .craft-title h4 {
+        font-size: 1.2rem;
+    }
+
+    .craft-title h3 {
+        font-size: 1.6rem;
+    }
+
+    .arrival-heading h2,
+    .inside-main h2,
+    .trending-heading h2 {
+        font-size: 3rem;
+    }
+
+    .arrival-heading p,
+    .trending-heading p,
+    .latest-heading p {
+        width: 100%;
+    }
+
+    .arrival-title h3,
+    .trending-title h3 {
+        font-size: 1.6rem;
+    }
+
+    .arrival-title p,
+    .trending-title p {
+        font-size: 1.4rem;
+    }
+
+    .cta-btn {
+        padding: 12px 15px;
+        font-size: 1.2rem;
+    }
+
+    .latest-title h5 {
+        font-size: 1.2rem;
+    }
+
+    .latest-title h3 {
+        font-size: 1.6rem;
+    }
+
+    .footer-logo a,
+    .main-footer h4 {
+        font-size: 1.6rem;
+    }
+
+    .footer-logo p,
+    .quicks-links li a {
+        font-size: 1.4rem;
+    }
+
+}
+
+/* Responsive Design End */
