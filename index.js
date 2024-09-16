@@ -39,7 +39,6 @@ scrollToTopButton.addEventListener("click", function () {
 const sr = ScrollReveal({
     distance: '50px',
     duration: 1700,
-    reset: true
 });
 
 sr.reveal('.home', { delay: 100, origin: 'top' });
